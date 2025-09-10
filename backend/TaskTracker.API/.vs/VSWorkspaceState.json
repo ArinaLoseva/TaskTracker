@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\bin\\Debug",
+    "\\bin\\Release",
+    "\\Controllers",
+    "\\Data",
+    "\\Models",
+    "\\obj\\Debug"
+  ],
+  "SelectedNode": "\\Models\\TaskItem.cs",
+  "PreviewInSolutionExplorer": false
+}
