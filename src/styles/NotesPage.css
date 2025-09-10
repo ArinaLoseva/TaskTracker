@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+}
+
+.notes-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    background-color: #CFD3FF;
+    padding: 40px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+/* Общие стили для всех блоков */
+.filters, .create-note, .notes-list {
+    background: white;
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: fit-content;
+}
+
+    .filters h3, .create-note h3, .notes-list h3 {
+        margin-bottom: 15px;
+    }
+
+    .filters input, .create-note input, .create-note textarea, .edit-note-card input, .edit-note-card textarea, select {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-family: monospace;
+    }
+
+    .edit-note-card textarea{
+        height: 100px;
+    }
+
+    .filters button, .create-note button, .edit-note-card button {
+        background-color: #717BE3;
+        color: white;
+        padding: 8px;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-top: 15px;
+        font-family: monospace;
+    }
+
+.filters, .create-note {
+    width: 200px;
+}
+
+.actions-buttons {
+    display: flex;
+    gap: 10px;
+}
+.edit-selects {
+    display: flex;
+    gap: 15px;
+}
+
+.edit-note-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Блок заметок */
+.notes-list {
+    width: 100%;
+    max-width: 900px;
+    min-width: 300px;
+    box-sizing: border-box;
+}
+
+/* Контейнер для прокрутки заметок */
+.notes-container {
+    max-height: 700px;
+    overflow-y: auto; /* вертикальная прокрутка */
+    padding-right: 10px; /* отступ для скролла */
+}
+
+.note-card, edit-note-card {
+    border: 1px solid #717BE3;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.dates {
+    display: flex;
+    gap: 15px;
+    color: #777777;
+}
+
+.tags {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.tag {
+    padding: 3px 8px;
+    border-radius: 8px;
+    color: white;
+    font-size: 0.8rem;
+    background-color: grey;
+}
+
+    /* Темы */
+    .tag.theme-home {
+        background-color: #ff9800; /* оранжевый */
+    }
+
+    .tag.theme-work {
+        background-color: #2196f3; /* синий */
+    }
+
+    .tag.theme-family {
+        background-color: #4caf50; /* зеленый */
+    }
+
+    .tag.theme-pet {
+        background-color: #9c27b0; /* фиолетовый */
+    }
+
+    .tag.theme-hobby {
+        background-color: #e91e63; /* розовый */
+    }
+
+    .tag.theme-personal {
+        background-color: #607d8b; /* серо-синий */
+    }
+
+
+    /* Статусы */
+    .tag.status-veryimportant {
+        background-color: #2936BE; /* красный */
+    }
+
+    .tag.status-important {
+        background-color: #4A55CC; /* ярко-оранжевый */
+    }
+
+    .tag.status-necessary {
+        background-color: #717BE3; /* ярко-синий */
+    }
+
+    .tag.status-desirable {
+        background-color: #9398D4; /* зелёный */
+    }
+
+    .tag.status-notimportant {
+        background-color: #ABADC3; /* серый */
+    }
+
